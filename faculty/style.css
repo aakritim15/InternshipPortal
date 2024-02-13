@@ -3,10 +3,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: aliceblue;
+    display: flex;
   }
 
   #dashboard {
     display: flex;
+    flex-direction: column;
+    
   }
 
   #sidebar {
@@ -15,13 +18,15 @@ body {
     color: black;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    min-height: 100vh;
+    min-height: 130vh;
     overflow-y: auto;
   }
 
   #main-content {
     flex: 1;
     padding: 20px;
+    width: calc(100% - 350px); 
+    float: right;
   }
 
   #navbar {
