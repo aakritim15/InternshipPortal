@@ -17,7 +17,7 @@
 <div id="internship-content">
   <h2>Past Internships</h2>
   <table id="past-internships-table">
-    <!-- Table structure for past internships -->
+    
     <thead>
       <tr>
         <th>Project Name</th>
@@ -27,13 +27,13 @@
       </tr>
     </thead>
     <tbody id="past-internships-table-body">
-      <!-- Internship data will be populated here -->
+      
     </tbody>
   </table>
 
   <h2>Ongoing Internships</h2>
   <table id="ongoing-internships-table">
-    <!-- Table structure for ongoing internships -->
+   
     <thead>
       <tr>
         <th>Project Name</th>
@@ -43,13 +43,13 @@
       </tr>
     </thead>
     <tbody id="ongoing-internships-table-body">
-      <!-- Internship data will be populated here -->
+     
     </tbody>
   </table>
 
   <h2>Upcoming Internships</h2>
   <table id="upcoming-internships-table">
-    <!-- Table structure for upcoming internships -->
+    
     <thead>
       <tr>
         <th>Project Name</th>
@@ -59,7 +59,7 @@
       </tr>
     </thead>
     <tbody id="upcoming-internships-table-body">
-      <!-- Internship data will be populated here -->
+     
     </tbody>
   </table>
 </div>
@@ -69,7 +69,7 @@
     const rootElement = document.getElementById('dashboard');
     ReactDOM.render(React.createElement(Sidebar), rootElement);
 
-    // Sample data for past, ongoing, and upcoming internships
+   
     const pastInternships = [
       { projectName: 'Past Project 1', interns: 5, duration: '3 months', startDate: '2022-01-01' },
       { projectName: 'Past Project 2', interns: 3, duration: '2 months', startDate: '2022-03-15' },
@@ -99,7 +99,7 @@
       });
     }
 
-    // Populate tables with sample data
+    
     populateInternshipTable('past-internships-table', pastInternships);
     populateInternshipTable('ongoing-internships-table', ongoingInternships);
     populateInternshipTable('upcoming-internships-table', upcomingInternships);

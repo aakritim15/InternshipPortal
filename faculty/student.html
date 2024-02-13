@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script type="text/javascript" src="Sidebar.js" defer></script>
+</head>
+<body>
+
+
+<div id="dashboard"></div>
+
+<div id="student-content">
+ 
+</div>
+
+<script type="text/javascript">
+    window.onload= function(){
+  const rootElement = document.getElementById('dashboard');
+  ReactDOM.render(React.createElement(window.Sidebar), rootElement);
+    }
+</script>
+
+</body>
+</html>

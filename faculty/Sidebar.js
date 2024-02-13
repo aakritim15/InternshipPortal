@@ -5,7 +5,7 @@ function Sidebar() {
     React.createElement('h2', null, 'Faculty Dashboard'),
     React.createElement('ul', null,
       React.createElement('li', null,
-        React.createElement('a', { href: '#' },
+        React.createElement('a', { href: 'index.html' },
           React.createElement('i', { className: 'fas fa-home' }),
           ' Home'
         )
@@ -17,7 +17,7 @@ function Sidebar() {
         )
       ),
       React.createElement('li', null,
-        React.createElement('a', { href: '#' },
+        React.createElement('a', { href: 'student.html' },
           React.createElement('i', { className: 'fas fa-user-graduate' }),
           ' Students'
         )
