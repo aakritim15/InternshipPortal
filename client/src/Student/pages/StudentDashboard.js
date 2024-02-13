@@ -1,5 +1,5 @@
 import {React , useState,useEffect} from 'react'
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../../components/Sidebar'
 const InternshipCard = ({internship})=>{
   const formattedStartDate = new Date(internship.startDate).toLocaleDateString('en-US', {
     year: 'numeric',
