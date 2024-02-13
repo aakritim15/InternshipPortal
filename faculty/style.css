@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+  }
+
+  #dashboard {
+    display: flex;
+  }
+
+  #sidebar {
+    width: 250px;
+    background-color:#fdedf0;
+    color: black;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  #main-content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  #navbar {
+    background-color: #fdedf0;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navbar h1 {
+    margin: 0;
+  }
+
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #sidebar li {
+    margin-bottom: 10px;
+  }
+
+  #sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  #sidebar a:hover {
+    background-color: #495057;
+  }
+
+  #sidebar a i {
+    margin-right: 10px;
+  }
+
+  #logout-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  #logout-btn:hover {
+    background-color: #495057;
+  }
+
+  #internship-list {
+    margin-top: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #dee2e6;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #fdedf0;
+    color: black;
+  }
+  /* Style for the progress chart section */
+#progress-chart {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #progress-chart h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the chart canvas */
+  #myChart {
+    width: 50%;
+    height: 200px;
+  }
+  
