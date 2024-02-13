@@ -72,6 +72,39 @@ body {
     margin-right: 10px;
   }
 
+  #internship-content {
+    flex: 1;
+    padding: 20px;
+    width: calc(100% - 250px);
+  }
+  
+  #past-internships-table,
+  #ongoing-internships-table,
+  #upcoming-internships-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #past-internships-table,
+  #ongoing-internships-table,
+  #upcoming-internships-table,
+  th,
+  td {
+    border: 1px solid #dee2e6;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #fdedf0;
+    color: black;
+  }
+  
   #logout-btn {
     text-decoration: none;
     color: #fff;
