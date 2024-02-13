@@ -1,0 +1,104 @@
+
+body {
+    background-image: linear-gradient(135deg, rgba(130, 76, 106, 0.8), rgba(69, 105, 144, 0.8)), url('back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    margin-top: 10%;
+}
+
+.signup-container {
+    margin-top: 3.5%;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-header {
+    background: #6F57B5; /* Solid color for header background */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1%;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input.form-control {
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size:1.2em ;
+    padding: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+button.btn-primary {
+    margin-top:15%;
+    background: #6F57B5;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background: #5C4A99;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #6F57B5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 15%;
+    }
+    .signup-container {
+        margin-top: 2%;
+    }
+}
