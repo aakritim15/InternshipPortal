@@ -1,7 +1,7 @@
 
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import StudentDashboard from './pages/StudentDashboard';
+import StudentDashboard from '../src/Student/pages/StudentDashboard';
 function App() {
   return (
     <Router>

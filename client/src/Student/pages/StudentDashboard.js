@@ -6,13 +6,8 @@ const InternshipCard = ({internship})=>{
     month: 'long',
     day: 'numeric',
   });
-  const formattedEndDate = new Date(internship.startDate).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
   return (
-    <div className="bg-white p-4 m-4 rounded-md shadow-md flex flex-col gap-2">
+    <div className="bg-white p-4 m-4 rounded-md shadow-md flex flex-col gap-2 w-80 flex-wrap">
       <h2 className="text-2xl font-semibold">{internship.title}</h2>
       <span className='text-slate-500 font-semibold'>{internship.company}</span>
       <p className='text-md font-normal'>{internship.location}</p>
@@ -58,14 +53,23 @@ const StudentDashboard = () => {
     fetchExistingData();
   }, []);
   return (
-    <div className='flex w-full h-screen'>
-      <div className='flex-col bg-red-50 p-5 w-[15%]'>
+    <div className='flex w-full h-screen '>
+      <div className='flex-col bg-red-50 p-5 w-[15%] '>
         <Sidebar/>
       </div>
-      <div className='rounded-lg bg-slate-100 w-[85%]'>
-        <h1 className="flex flex-col text-3xl font-bold p-5 items-start">Welcome back</h1>
+      <div className='rounded-lg bg-slate-100 w-[85%] p-5'>
+        <h1 className="flex flex-col text-3xl font-bold items-start">Welcome back</h1>
         <div>
-        <div className='flex flex-row w-max '>
+        <div className='flex flex-row pt-5 space-x-96'>
+          <h2 className='text-xl font-semibold text-slate-600'>
+            Internships
+          </h2>
+          <div className='flex'>
+            filter
+          </div>
+        </div>
+        
+        <div className='flex flex-row flex-wrap '>
           {/* Map through existingData and render InternshipCard for each internship */}
           {existingData.map((internship) => (
             <InternshipCard key={internship._id} internship={internship} />
