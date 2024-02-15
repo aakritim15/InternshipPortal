@@ -6,100 +6,12 @@
   <title>Faculty Dashboard</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-  <script type="text/javascript" src="Sidebar.js" defer></script>
+  <script type="module" src="intership.js" defer></script>
 </head>
 <body>
 
-<div id="dashboard"></div>
-
-<div id="main-content">
-
-  <div id="internship-list">
-    <h2>Internship List</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Title</th>
-          <th>Duration</th>
-        </tr>
-      </thead>
-      <tbody id="internship-table-body">
-      </tbody>
-    </table>
-  </div>
-
-  <script>
-    window.onload = function () {
-      const rootElement = document.getElementById('dashboard');
-      ReactDOM.render(React.createElement(Sidebar), rootElement);
-
-      const internships = [
-        { company: 'ABC Corp', title: 'Software Developer Intern', duration: '3 months' },
-        { company: 'Tech Solutions', title: 'UX/UI Designer Intern', duration: '3 months' },
-        { company: 'Innovate Labs', title: 'Research Intern', duration: '6 months' },
-      ];
-
-      function populateInternshipTable() {
-        const tableBody = document.getElementById('internship-table-body');
-
-        internships.forEach(internship => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td>${internship.company}</td>
-            <td>${internship.title}</td>
-            <td>${internship.duration}</td>
-          `;
-          tableBody.appendChild(row);
-        });
-      }
-
-      populateInternshipTable();
-
-      document.getElementById('logout').addEventListener('click', function () {
-        alert('Logging out...');
-      });
-    };
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <div id="progress-chart">
-    <h2>Progress Chart</h2>
-    <canvas id="myChart"></canvas>
-  </div>
-
-  <script>
-    const progressData = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-      datasets: [{
-        label: 'Progress',
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        borderWidth: 1,
-        data: [65, 59, 80, 81, 56, 55],
-      }]
-    };
-
-    function createProgressChart() {
-      const ctx = document.getElementById('myChart').getContext('2d');
-      const myChart = new Chart(ctx, {
-        type: 'line',
-        data: progressData,
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-        }
-      });
-    }
-
-    createProgressChart();
-  </script>
-
+<div id="dashboard">
+  <InternshipPage />
 </div>
 
 </body>
