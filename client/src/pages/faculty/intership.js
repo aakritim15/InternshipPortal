@@ -80,7 +80,7 @@ const UpcomingInternships = ({ internships }) => (
   </div>
 );
 
-function InternshipPage() {
+const InternshipPage = () =>{
   const pastInternships = [
     { projectName: 'Past Project 1', interns: 5, duration: '3 months', startDate: '2022-01-01' },
     { projectName: 'Past Project 2', interns: 3, duration: '2 months', startDate: '2022-03-15' },
@@ -110,4 +110,4 @@ function InternshipPage() {
   );
 }
 
-ReactDOM.render(<InternshipPage />, document.getElementById('root'));
+export default InternshipPage;

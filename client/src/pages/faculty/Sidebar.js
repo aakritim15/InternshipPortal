@@ -1,4 +1,4 @@
-function Sidebar() {
+const Sidebar=() =>{
   return (
     <div id="sidebar">
       <h2>Faculty Dashboard</h2>

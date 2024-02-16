@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Sidebar from './Sidebar'; 
 
 const internships = [
@@ -8,8 +7,12 @@ const internships = [
     { company: 'Innovate Labs', title: 'Research Intern', duration: '6 months' },
   ];
   
-  function InternshipTable() {
+  const InternshipTable =()=> {
     return (
+      <div>
+      <div id="dashboard">
+      <Sidebar />
+    </div>
       <div id="internship-list">
         <h2>Internship List</h2>
         <table>
@@ -31,26 +34,8 @@ const internships = [
           </tbody>
         </table>
       </div>
+      </div>
     );
   }
 
-function App() {
-  return (
-    <div>
-      <div id="dashboard">
-        <Sidebar />
-      </div>
-
-      <div id="main-content">
-        <InternshipTable />
-        <div id="progress-chart">
-          <h2>Progress Chart</h2>
-          <canvas id="myChart"></canvas>
-        </div>
-      </div>
-      
-    </div>
-  );
-}
-
-ReactDOM.render(<App />, document.getElementById('root'));
+export default InternshipTable;

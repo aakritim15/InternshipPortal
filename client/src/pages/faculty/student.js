@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Sidebar from './Sidebar';
-function Student() {
+const  Student =()=> {
   const studentContent = (
     <div>
       <h2>Student Content Goes Here</h2>
@@ -21,4 +20,4 @@ function Student() {
   );
 }
 
-ReactDOM.render(<Student />, document.getElementById('root'));
+export default Student;
