@@ -1,0 +1,21 @@
+.internship-section {
+    margin-bottom: 20px; /* Add margin between each internship section */
+  }
+  
+  .internship-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .internship-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .internship-box:hover {
+    transform: scale(1.05);
+  }
+  
